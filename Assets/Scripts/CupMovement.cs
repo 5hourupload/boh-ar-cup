@@ -80,8 +80,8 @@ public class CupMovement : MonoBehaviour
             GameObject go = GameObject.Find("Left_HandLeft(Clone)");
             if (go != null)
             {
-                leftHandMiddleMiddle = go.transform.FindChild("PinkyMiddleJoint Proxy Transform").gameObject;
-                leftHandWrist = go.transform.FindChild("Wrist Proxy Transform").gameObject;
+                leftHandMiddleMiddle = go.transform.Find("PinkyMiddleJoint Proxy Transform").gameObject;
+                leftHandWrist = go.transform.Find("Wrist Proxy Transform").gameObject;
                 leftHandOnline = true;
                 Debug.Log("online!");
             }
